@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+
+    <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjIwIiBmaWxsPSIjMDIwZDE3Ii8+PHRleHQgeD0iNTAiIHk9IjYyIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjYwIiBmaWxsPSIjMDBlNWZmIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCI+UDwvdGV4dD48L3N2Zz4=">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Devicon Icons (original colors) -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="topbar">
+  <div class="brand">
+      <span class="logo typing-logo">Portfolio</span>
+      <span class="sub typing-sub">Myself</span>
+  </div>
+
+  <!-- DESKTOP NAV -->
+  <nav class="nav-links-desktop">
+    <a href="#home">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#internships">Internships</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#tools">Tools</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <!-- MOBILE TOGGLE -->
+  <button id="menuToggle" class="menu-btn">☰</button>
+
+  <!-- MOBILE MINI MENU -->
+  <nav id="miniMenu" class="mini-menu">
+    <a href="#home">Home</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#internships">Internships</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#tools">Tools</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+
+<!-- CURSOR EFFECTS -->
+<div id="cursorGlow"></div>
+<div id="clickRipple"></div>
+
+
+<header id="home" class="section hero-animate">
+  <div class="hero-box mar">
+
+    <div class="box box1 photo-box">
+      <!-- ADD YOUR PHOTO -->
+      <img class="myimg" src="assets/images/profile/profile.jpeg" alt="Praveen M">
+    </div>
+    <div class="box box1 box2 hero-text">
+      <h1 class="hero-name">Praveen M</h1>
+      <h2 class="hero-role">Python Full Stack Developer</h2>
+
+
+      <p>
+        Backend-focused full stack developer with strong experience in Python and Django.
+        I build clean, structured, and scalable web applications with a deep focus
+        on database design and real-world problem solving.
+      </p>
+
+      <p>
+        My goal is to grow as a professional software developer, contribute to impactful
+        projects, and become a reliable engineer in modern web development.
+      </p>
+
+      <p><strong>Tech Stack:</strong> Python, Django, JavaScript, HTML, CSS, MySQL, Oracle</p>
+          <div class="link-row">
+            <a href="mailto:praveen.manisekaran2005@gmail.com" class="link-btn hov">
+              <svg class="mail-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill="currentColor"
+                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+              <span>Email</span>
+            </a>
+            <a href="https://github.com/Prvn-1" target="_blank" class="link-btn">
+              <i class="devicon-github-original"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/pravn1/" target="_blank" class="link-btn">
+              <i class="devicon-linkedin-plain colored"></i>
+              <span>LinkedIn</span>
+            </a>
+            <!-- VIEW RESUME (IN-PAGE PREVIEW ONLY) -->
+            <!-- RESUME MODAL -->
+                     <!-- 🔥 ADD IT HERE -->
+        <a href="assets/resume/Praveen-M-Resume.pdf"
+           class="link-btn"
+           onclick="openResume(event)">
+          <span>View Resume</span>
+        </a>
+                <div id="resumeModal" class="resume-modal" onclick="closeResume()">
+                <div class="resume-box" onclick="event.stopPropagation()">
+                  <button class="resume-close" onclick="closeResume()">✕</button>
+                  <iframe id="resumeFrame"></iframe>
+                </div>
+              </div>
+
+
+            <!-- DOWNLOAD RESUME -->
+            <a href="assets/resume/Praveen-M-Resume.pdf"
+              download
+              class="link-btn">
+              <svg class="download-icon" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M5 20h14v-2H5v2zm7-18v10.2
+                  l3.6-3.6L17 10l-5 5-5-5
+                  1.4-1.4L11 12.2V2h1z"/>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+            <a href="tel:+916380034334"  target="_blank" class="link-btn">
+              <span>📞 Contact</span>
+            </a>
+
+
+      </span>
+    </div>
+
+    </div>
+
+    </div>
+
+  </div>
+</header>
+
+
+<div class="context-strip">
+  <span>Python</span>
+  <span>Django</span>
+  <span>Backend</span>
+  <span>Web Applications</span>
+  <span>Scalable Systems</span>
+  <span>Clean Architecture</span>
+</div>
+
+<div class="scroll-indicator">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+
+
+
+
+<!-- SKILLS -->
+<section id="skills" class="section reveal">
+  <h2 class="section-title">Skills</h2>
+  <div class="grid">
+    <div class="box hovering center reveal reveal-scale delay-1"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+    <div class="box hovering center reveal reveal-scale delay-1"><i class="devicon-django-plain colored"></i><span>Django</span></div>
+    <div class="box hovering center reveal reveal-scale delay-1"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+
+    <div class="box hovering center reveal reveal-scale delay-1"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+    <div class="box hovering center reveal reveal-scale delay-1"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+    <div class="box hovering center reveal reveal-scale delay-1"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+    <div class="box hovering center reveal reveal-scale delay-1"><i class="devicon-oracle-original colored"></i><span>Oracle</span></div>
+    <div class="box hovering center reveal reveal-scale delay-1"><i class="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+    <div class="box hovering center reveal reveal-scale delay-1"><i class="devicon-fastapi-plain colored"></i><span>FastAPI</span></div>
+    <div class="box hovering center reveal reveal-scale delay-1"><i class="devicon-github-original"></i><span>GitHub</span> </div>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="section pro1 reveal ">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="project-grid" id="projectGrid">
+
+    <!-- ===== FIRST 8 PROJECTS (VISIBLE) ===== -->
+    <div class="internship-card project-card  reveal delay-2">
+      <h3>Django Civic Issue Reporting System</h3>
+      <p>Web app for reporting city issues, uploading photos, and tracking complaint progress.</p>
+      <span>Python · Django · SQLite · HTML · CSS</span>
+      <a href="https://django-civic-issue-reporting-system.onrender.com" target="_blank">View Project</a>
+    </div>
+    <div class="internship-card project-card reveal delay-2">
+      <h3>Study Sphere – Resource Platform</h3>
+      <p>Platform for students to share, download, and manage academic resources securely.</p>
+      <span>Python · Django · MySQL · HTML · CSS</span>
+      <a href="https://studysphere-04og.onrender.com/" target="_blank">View Project</a>
+    </div>
+
+    <div class="internship-card project-card  reveal delay-2">
+      <h3>Rock Paper Scissors Game Application</h3>
+      <p>Browser game that tracks wins, losses, and ties with local storage.</p>
+      <span>HTML · CSS · JavaScript</span>
+      <a href="https://prvn-1.github.io/Rock-Paper-Scissors/10-rock-paper-scissors.html" target="_blank">View Project</a>
+    </div>
+
+    
+    <div class="internship-card project-card  reveal delay-2">
+      <h3>YouTube Page Clone Project (Without Framework)</h3>
+      <p>Responsive YouTube homepage UI built using Flexbox and Grid.</p>
+      <span>HTML · CSS</span>
+      <a href="https://Prvn-1.github.io/Youtube-Page-Clone/youtube.html" target="_blank">View Project</a>
+    </div>
+
+    <div class="internship-card project-card  reveal delay-2">
+      <h3>Todo List Application System</h3>
+      <p>Task management app storing data using localStorage.</p>
+      <span>HTML · CSS · JavaScript</span>
+      <a href="https://prvn-1.github.io/Todo-List/11-todo-list.html" target="_blank">View Project</a>
+    </div>
+
+    <div class="internship-card project-card  reveal delay-2">
+      <h3>Simple QR Code Generator Using API</h3>
+      <p>Generates QR codes from text or URLs using external API with validation.</p>
+      <span>HTML · CSS · JavaScript</span>
+      <a href="https://prvn-1.github.io/QR-code-generator/" target="_blank">View Project</a>
+    </div>
+
+    <div class="internship-card project-card  reveal delay-2">
+      <h3>Simple UI Calculator Application</h3>
+      <p>Responsive calculator supporting arithmetic operations with clean UI.</p>
+      <span>HTML · CSS · JavaScript</span>
+      <a href="https://Prvn-1.github.io/Calculator-Application/Calculattor.html" target="_blank">View Project</a>
+    </div>
+
+    <div class="internship-card project-card  reveal delay-2">
+      <h3>Random Password Generator</h3>
+      <p>Frontend tool that generates strong passwords using letters, numbers, and symbols.</p>
+      <span>HTML · CSS · JavaScript</span>
+      <a href="https://Prvn-1.github.io/Random-Password-Generator/index.html" target="_blank">View Project</a>
+    </div>
+
+
+    <div class="internship-card project-card extra-project reveal delay-2">
+      <h3>Current Portfolio Website</h3>
+      <p>Personal portfolio with advanced UI, animations, and glow effects.</p>
+      <span>HTML · CSS · JavaScript</span>
+      <a href="https://Prvn-1.github.io/Portfolio/" target="_blank">View Project</a>
+    </div>
+
+    <!-- ===== EXTRA PROJECTS (HIDDEN) ===== -->
+    <!-- Add future projects here using class "extra-project" -->
+    <!-- Example below (keep structure same) -->
+
+    <!--
+    <div class="project-card extra-project reveal delay-2">
+      <h3>Future Project</h3>
+      <p>Description here</p>
+      <span>Tech Stack</span>
+      <a href="#">View Project</a>
+    </div>
+    -->
+
+  </div>
+
+  <!-- SHOW MORE BUTTON -->
+  <div class="project-toggle reveal">
+    <button id="toggleProjectBtn">Show More Projects</button>
+  </div>
+</section>
+
+<!-- INTERNSHIPS -->
+<section id="internships" class="section margin reveal">
+  <h2 class="section-title">Experience - Internships</h2>
+
+  <div class="internship-grid" id="internshipGrid">
+
+    <!-- Internship 1 -->
+    <div class="internship-card reveal reveal-up">
+      <img src="assets/images/internships/cognetix.jpg"
+           class="intern-img"
+           onclick="openIntern(this.src)">
+      <h3>Python Developer Intern</h3>
+      <h4>Cognetix Technology</h4>
+      <p>Jan 2026 – Feb 2026</p>
+      <span>Worked on Python-based backend development and real-time project tasks.</span>
+    </div>
+
+    <!-- Internship 2 -->
+    <div class="internship-card reveal reveal-up">
+      <img src="assets/images/internships/codealpha.jpg"
+           class="intern-img"
+           onclick="openIntern(this.src)">
+      <h3>Python Programming Intern</h3>
+      <h4>CodeAlpha (Virtual)</h4>
+      <p>Jan 2026</p>
+      <span>Developed API-based Python projects and applied analytical problem-solving skills.</span>
+    </div>
+
+    <!-- Internship 3 -->
+    <div class="internship-card reveal reveal-up">
+      <img src="assets/images/internships/devarena.jpg"
+           class="intern-img"
+           onclick="openIntern(this.src)" alt="Progressing...">
+      <h3>Full Stack Development Intern</h3>
+      <h4>The Developers Arena</h4>
+      <p>Jan 2026 – Present</p>
+      <span>Building weekly Django and Flask projects with REST API integration and database handling.</span>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section margin reveal ">
+  <h2 class="section-title">Certifications</h2>
+
+  <div class="project-grid cert-grid" id="certGrid">
+
+    <!-- ===== VISIBLE FIRST 8 ===== -->
+    <div class="internship-card project-card cert-card reveal reveal-scale">
+      <img src="assets/images/certifications/SLA-cert.jpg" onclick="openCert(this.src)">
+      <h3>SLA Institute</h3>
+      <p>Python Full Stack Web Development (6 Months – Offline)</p>
+    </div>
+
+    <div class="internship-card project-card cert-card reveal reveal-scale">
+      <img src="assets/images/certifications/IBMCE CEJS1IN Certificate.jpg" onclick="openCert(this.src)">
+      <h3>IBM ICE</h3>
+      <p>JavaScript Certification Program</p>
+    </div>
+
+    <div class="internship-card project-card cert-card reveal reveal-scale">
+      <img src="assets/images/certifications/simplilearn-SQL.jpg" onclick="openCert(this.src)">
+      <h3>SQL</h3>
+      <p>Simplilearn SkillUp Certification</p>
+    </div>
+
+    <div class="internship-card project-card cert-card reveal reveal-scale">
+      <img src="assets/images/certifications/Oracle-sql.png" onclick="openCert(this.src)">
+      <h3>ORACLE</h3>
+      <p>Oracle Certified Foundation Associate</p>
+    </div>
+
+    <div class="internship-card project-card cert-card reveal reveal-scale">
+      <img src="assets/images/certifications/MachineLearning-clg.jpeg" onclick="openCert(this.src)">
+      <h3>Machine Learning & AI</h3>
+      <p>Government Arts College Dharmapuri</p>
+    </div>
+
+    <div class="internship-card project-card cert-card reveal reveal-scale">
+      <img src="assets/images/certifications/Simplilearn-JS.jpg" onclick="openCert(this.src)">
+      <h3>JavaScript Beginners</h3>
+      <p>Simplilearn SkillUp</p>
+    </div>
+
+    <div class="internship-card project-card cert-card reveal reveal-scale">
+      <img src="assets/images/certifications/AI-Green-skill.jpg" onclick="openCert(this.src)">
+      <h3>AI & Green Skills</h3>
+      <p>SHELL – EDUNET</p>
+    </div>
+
+    <div class="internship-card project-card cert-card reveal reveal-scale">
+      <img src="assets/images/certifications/cyber-security.jpg" onclick="openCert(this.src)">
+      <h3>Cyber Security</h3>
+      <p>Infosys Springboard</p>
+    </div>
+
+    <!-- ===== HIDDEN EXTRA CERTIFICATES ===== -->
+    <div class="internship-card project-card cert-card extra-cert reveal reveal-scale">
+      <img src="assets/images/certifications/oracle-cloud.jpg" onclick="openCert(this.src)">
+      <h3>Oracle Cloud Architecture</h3>
+      <p>Oracle (Naan Mudhalvan)</p>
+    </div>
+
+    <div class="internship-card project-card cert-card extra-cert reveal reveal-scale">
+      <img src="assets/images/certifications/smart-bridge.jpg" onclick="openCert(this.src)">
+      <h3>Fundamentals of Coding & Cloud</h3>
+      <p>SmartBridge CSR</p>
+    </div>
+
+    <div class="internship-card project-card cert-card extra-cert reveal reveal-scale">
+      <img src="assets/images/certifications/cambridge.jpg" onclick="openCert(this.src)">
+      <h3>English Communication</h3>
+      <p>Cambridge Assessment</p>
+    </div>
+
+  </div>
+
+  <!-- SHOW MORE BUTTON -->
+  <div class="cert-toggle reveal">
+    <button id="toggleCertBtn">Show More Certificates</button>
+  </div>
+</section>
+
+
+
+<!-- TOOLS -->
+<section id="tools" class="section mine reveal reveal-float">
+  <h2 class="section-title">Tools</h2>
+  <div class="grid">
+    <div class="box hovering center tool-card reveal reveal-float"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+    <div class="box hovering center tool-card reveal reveal-float"><i class="devicon-pycharm-plain colored"></i><span>PyCharm</span></div>
+    <div class="box hovering center tool-card reveal reveal-float"><i class="devicon-jupyter-plain colored"></i><span>Jupyter Notebook</span></div>
+    <div class="box hovering center tool-card reveal reveal-float"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+    <div class="box hovering center tool-card reveal reveal-float"><i class="devicon-github-original"></i><span>GitHub</span></div>
+</div>
+
+  </div>
+</section>
+
+
+
+<!-- CERTIFICATE MODAL -->
+<div class="cert2" id="certModal" onclick="closeCert()">
+  <img id="certModalImg" class="cert2">
+</div>
+
+
+
+
+<section id="about" class="section reveal">
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about-grid">
+
+    <div class="box hovering about-card reveal">
+      <strong>💼 Preferred Work Locations</strong>
+      <span>Chennai</span>
+      <span>Bangalore</span>
+      
+    </div>
+
+    <div class="box hovering about-card edu-card reveal">
+      <div class="edu-icon">
+        
+      </div>
+
+      <strong> 🎓 Under Graduate</strong>
+      <span>Periyar University</span>
+      <span>BSc Computer Science</span>
+    </div>
+
+    <div class="box hovering about-card edu-card reveal">
+      <div class="edu-icon">
+      
+      </div>
+
+      <strong> 🎓 Post Graduate</strong>
+      <span>Bharathidasan University</span>
+      <span>MCA – Progressing...</span>
+    </div>
+
+    
+
+    <div class="box hovering about-card reveal">
+      <strong>🌐 Languages</strong>
+      <span></span>
+      <span>English</span>
+      <span>Tamil</span>
+    </div>
+
+    <div class="box hovering about-card reveal">
+      <strong>📞 Mobile Number</strong>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span>
+        <a href="tel:+916380034334" class="phone-link">
+          +91 63800 34334
+        </a>
+      </span>
+    </div>
+
+    
+    <div class="box hovering about-card reveal">
+      <strong>🎯 Area of Interest</strong>
+      <span></span>
+      <span></span>
+      <span>Backend Development</span>
+      <span>Full Stack, Databases</span>
+      <span>Web Applications</span>
+    </div>
+
+    <div class="box hovering about-card reveal">
+      <strong>🤝 Soft Skills</strong>
+      <span></span>
+      <span>Time Management</span>
+      <span>Problem Solving</span>
+      <span>Adaptable to New Technologies</span>
+    </div>
+
+
+  </div>
+</section>
+
+
+
+<footer class="smart-footer">
+
+  <!-- LEFT -->
+  <div class="sf-left">
+    <span>© <span id="year"></span> Praveen M</span>
+    <span class="dot">•</span>
+    <span id="liveDate">-- --- ----</span>
+  </div>
+
+  <!-- CENTER -->
+  <div class="sf-center">
+    <span class="status">🟢 Available</span>
+    <span class="dot">•</span>
+    <span class="focus">Currently focused on Django</span>
+    <span class="dot">•</span>
+    <span class="work">Open to Full-Time · Internship · Remote</span>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="sf-right">
+    <span id="liveTime">--:--</span>
+    <span class="dot">•</span>
+    <span>Updated <span id="lastUpdated">Today</span></span>
+    <span class="dot">•</span>
+      <a href="assets/resume/Praveen-M-Resume.pdf" download class="resume-link">
+        Download Resume
+      </a>
+
+  </div>
+
+</footer>
+
+
+
+<!-- RESUME PREVIEW MODAL (LIKE CERTIFICATE PREVIEW) -->
+<!-- RESUME PREVIEW MODAL (IMAGE PREVIEW) -->
+<div class="vi" id="resumeModal" onclick="closeResume()">
+  <img
+    id="resumeModalImg"
+    src="assets/resume/Praveen-M-Resume.pdf"
+    alt="Resume Preview">
+</div>
+
+
+<!-- INTERNSHIP MODAL -->
+<div id="internModal" onclick="closeIntern()">
+  <img id="internPreview">
+</div>
+
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
