@@ -1,94 +1,85 @@
-# Personal Portfolio
 
-This is my personal developer portfolio built using HTML, CSS, JavaScript, and Bootstrap.
+---
 
-:root {
-  --bg: rgb(27, 54, 93);
-  --card: #092538;
-  --gold: #d4af37;
-  --text: #f5f5f5;
-  --muted: #b5b5b5;
-}
+# 🚀 Praveen M – Developer Portfolio
 
-:root {
-  --bg: rgb(2, 13, 23);
-  --card: #27303c5d;
-  --gold: #00e1ff;
-  --text: #f5f5f5;
-  --muted: #b5b5b5;
-  --bg: rgb(2, 13, 23);
-  /* derived nav colors */
-  --nav-bg: rgba(2, 13, 23, 0.75);
-  --nav-border: rgba(212, 175, 55, 0.22);
-  --nav-blur: 16px;
-}
+This is my personal developer portfolio website showcasing my projects, certifications, internships, and technical skills.
 
-:root {
-  --bg: rgb(1, 5, 30);
-  --card: #061825;
-  --gold: #d4af37;
-  --text: #f5f5f5;
-  --muted: #b5b5b5;
-}
-:root {
-  --bg: rgb(3, 17, 32);
-  --card: #031623;
-  --gold: #d4af37;
-  --text: #f5f5f5;
-  --muted: #b5b5b5;
-}
+It is designed with a modern dark UI, smooth animations, and interactive previews.
 
-:root {
-  --bg: rgb(2, 13, 24);
-  --card: #1f293654;
-  --gold: #d4af37;
-  --text: #f5f5f5;
-  --muted: #b5b5b5;
-}........................................
-.box1:hover{
-    box-shadow:
-    0 0 400px rgba(182, 184, 189, 0.25),
-    0 0 15px rgba(86, 85, 83, 0.4);
-      transform: translateY(-6px);
-}
+---
 
-.box1{
-  box-shadow:
-    0 0 5px rgba(86, 85, 83, 0.4),
-    0 0 20px rgba(86, 86, 84, 0.25);
-  transform: translateY(-6px);
-}-------------------
+## 🌐 Live Website
 
+🔗 **Live Portfolio:**
+[https://Prvn-1.github.io/Portfolio/](https://Prvn-1.github.io/Portfolio/)
 
+---
 
-.box1:hover{
-    box-shadow:
-    0 0 400px rgba(124, 125, 129, 0.25),
-    0 0 15px rgba(86, 85, 83, 0.4);
-  transform: translateY(-10px);
-}
+## 🛠 Tech Stack
 
-.box1{
-  box-shadow:
-    0 0 5px rgba(86, 85, 83, 0.4),
-    0 0 20px rgba(86, 86, 84, 0.25);
-  transform: translateY(-6px);
-}///////////////////////////
+* HTML5
+* CSS3 (Custom styling + Animations)
+* JavaScript (DOM manipulation + Modals + Responsive logic)
 
-## Features
-- Responsive design
-- Clean UI
-- Skill and tool showcase
-- Project case studies
-- Resume download
+---
 
-## Tech Stack
-- HTML
-- CSS
-- JavaScript
-- Bootstrap
+## ✨ Features
 
-## Author
-YOUR_NAME
+* Responsive modern UI design
+* Smooth scroll animations
+* Project showcase with live links
+* Certificate preview modal
+* Internship certificate viewer
+* Resume PDF in-page preview
+* Show More / Show Less dynamic sections
+* Mobile optimized layout
+
+---
+
+## 📂 Sections Included
+
+* Home
+* Skills
+* Projects
+* Certifications
+* Internships (Experience)
+* Tools
+* About
+
+---
+
+## 📄 Resume Preview
+
+The portfolio includes an in-page PDF viewer modal for resume preview without navigating away from the website.
+
+---
+
+## 📸 Projects Highlight
+
+* Django Civic Issue Reporting System
+* Study Sphere – Academic Resource Platform
+* Rock Paper Scissors Game
+* Random Password Generator
+* YouTube Clone UI
+* Personal Portfolio Website
+
+---
+
+## 📬 Contact
+
+If you'd like to collaborate or connect:
+
+* LinkedIn: [https://www.linkedin.com/in/pravn1/](https://www.linkedin.com/in/pravn1/)
+* GitHub: [https://github.com/Prvn-1](https://github.com/Prvn-1)
+
+---
+
+## 🧠 Purpose
+
+This portfolio represents my growth as a Python Full Stack Developer and demonstrates my practical experience with frontend and backend technologies.
+
+---
+
 
 
