@@ -19,8 +19,42 @@ window.addEventListener("scroll", () => {
 
 
 
+const roles = [
+  "Python Developer",
+  "Full Stack Developer",
+  "Web Developer"
+];
 
+const typedRole = document.getElementById("typed-role");
 
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+  const currentRole = roles[roleIndex];
+
+  if (!isDeleting) {
+    typedRole.textContent = currentRole.substring(0, charIndex + 1);
+    charIndex++;
+
+    if (charIndex === currentRole.length) {
+      setTimeout(() => isDeleting = true, 1200);
+    }
+  } else {
+    typedRole.textContent = currentRole.substring(0, charIndex - 1);
+    charIndex--;
+
+    if (charIndex === 0) {
+      isDeleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+    }
+  }
+
+  setTimeout(typeEffect, isDeleting ? 50 : 90);
+}
+
+typeEffect();
 
 
 
@@ -135,14 +169,18 @@ certBtn.addEventListener("click", () => {
 
 
 
+
+
+
+
 function openResume(e) {
   e.preventDefault();
-
   const modal = document.getElementById("resumeModal");
   const frame = document.getElementById("resumeFrame");
 
   frame.src = "assets/resume/Praveen-M-Resume.pdf";
   modal.style.display = "flex";
+  document.body.style.overflow = "hidden";
 }
 
 function closeResume() {
@@ -151,6 +189,7 @@ function closeResume() {
 
   modal.style.display = "none";
   frame.src = "";
+  document.body.style.overflow = "auto";
 }
 
 
@@ -326,3 +365,39 @@ function closeIntern() {
 
   document.body.classList.remove("modal-open");
 }
+
+
+
+
+
+
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+
+  const aboutSection = document.getElementById("about");
+  const hireSection = document.getElementById("hire");
+
+  if (!aboutSection || !hireSection) return;
+
+  const aboutTop = aboutSection.offsetTop;
+  const hireTop = hireSection.offsetTop;
+  const scrollPosition = window.scrollY;
+
+  if (scrollPosition >= aboutTop - 200) {
+    scrollBtn.classList.add("show");
+  } else {
+    scrollBtn.classList.remove("show");
+  }
+
+});
+
+/* Scroll to Home properly */
+scrollBtn.addEventListener("click", () => {
+  const homeSection = document.getElementById("home");
+
+  window.scrollTo({
+    top: homeSection.offsetTop - 80,
+    behavior: "smooth"
+  });
+});

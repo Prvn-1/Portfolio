@@ -13,6 +13,9 @@
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
@@ -29,10 +32,13 @@
     <a href="#home">Home</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
-    <a href="#internships">Internships</a>
+    <a href="#internships">Experience</a>
     <a href="#certifications">Certifications</a>
     <a href="#tools">Tools</a>
     <a href="#about">About</a>
+    <a href="#hire" class="nav-link hire-btn" >Let's Talk</a>
+
+
   </nav>
 
   <!-- MOBILE TOGGLE -->
@@ -43,10 +49,13 @@
     <a href="#home">Home</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
-    <a href="#internships">Internships</a>
+    <a href="#internships">Experience</a>
     <a href="#certifications">Certifications</a>
     <a href="#tools">Tools</a>
     <a href="#about">About</a>
+    <a href="#hire" class="nav-link hire-btn">Let's Talk</a>
+
+
   </nav>
 </header>
 
@@ -56,17 +65,23 @@
 <div id="clickRipple"></div>
 
 
+
 <header id="home" class="section hero-animate">
   <div class="hero-box mar">
 
+    <!-- LEFT PHOTO -->
     <div class="box box1 photo-box">
-      <!-- ADD YOUR PHOTO -->
       <img class="myimg" src="assets/images/profile/profile.jpeg" alt="Praveen M">
     </div>
-    <div class="box box1 box2 hero-text">
-      <h1 class="hero-name">Praveen M</h1>
-      <h2 class="hero-role">Python Full Stack Developer</h2>
 
+    <!-- RIGHT CONTENT -->
+    <div class="box box1 box2 hero-text">
+
+      <h1 class="hero-name">Praveen M</h1>
+
+      <h2 class="hero-role">
+        <span id="typed-role"></span>
+      </h2>
 
       <p>
         Backend-focused full stack developer with strong experience in Python and Django.
@@ -79,65 +94,83 @@
         projects, and become a reliable engineer in modern web development.
       </p>
 
-      <p><strong>Tech Stack:</strong> Python, Django, JavaScript, HTML, CSS, MySQL, Oracle</p>
-          <div class="link-row">
-            <a href="mailto:praveen.manisekaran2005@gmail.com" class="link-btn hov">
-              <svg class="mail-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path fill="currentColor"
-                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
-              </svg>
-              <span>Email</span>
-            </a>
-            <a href="https://github.com/Prvn-1" target="_blank" class="link-btn">
+      <p><strong>Tech Stack : </strong> Python, Django, JavaScript, HTML, CSS, RESTful APIs, FAST API, MySQL, Oracle</p>
+
+      <!-- SOCIAL ICON BUTTONS -->
+      <div class="social-row">
+        <!-- HERO ACTION BUTTONS -->
+
+          
+
+                <!-- HERO ACTION AREA -->
+        <div class=".link-row hero-actions">
+
+          <!-- SOCIAL ICONS -->
+          <div class=".link-row social-icons">
+
+            <a href="https://github.com/Prvn-1" target="_blank" class="social-btn">
               <i class="devicon-github-original"></i>
-              <span>GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/pravn1/" target="_blank" class="link-btn">
-              <i class="devicon-linkedin-plain colored"></i>
-              <span>LinkedIn</span>
+
+            <a href="https://www.linkedin.com/in/pravn1/" target="_blank" class="social-btn">
+              <i class="devicon-linkedin-plain"></i>
             </a>
-            <!-- VIEW RESUME (IN-PAGE PREVIEW ONLY) -->
-            <!-- RESUME MODAL -->
-                     <!-- 🔥 ADD IT HERE -->
-        <a href="assets/resume/Praveen-M-Resume.pdf"
-           class="link-btn"
-           onclick="openResume(event)">
-          <span>View Resume</span>
-        </a>
-                <div id="resumeModal" class="resume-modal" onclick="closeResume()">
-                <div class="resume-box" onclick="event.stopPropagation()">
-                  <button class="resume-close" onclick="closeResume()">✕</button>
-                  <iframe id="resumeFrame"></iframe>
-                </div>
-              </div>
 
+            <a href="https://wa.me/916380034334" target="_blank" class="social-btn">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
 
-            <!-- DOWNLOAD RESUME -->
+            <a href="https://www.instagram.com/praveen_d_u_d_e/" target="_blank" class="social-btn">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <div class="hero-buttons">
+
             <a href="assets/resume/Praveen-M-Resume.pdf"
               download
-              class="link-btn">
-              <svg class="download-icon" viewBox="0 0 24 24">
-                <path fill="currentColor"
-                  d="M5 20h14v-2H5v2zm7-18v10.2
-                  l3.6-3.6L17 10l-5 5-5-5
-                  1.4-1.4L11 12.2V2h1z"/>
-              </svg>
-              <span>Download Resume</span>
-            </a>
-            <a href="tel:+916380034334"  target="_blank" class="link-btn">
-              <span>📞 Contact</span>
+              class="mini-btn">
+              <i class="fa-solid fa-download"></i>
+              Download CV
             </a>
 
+            <a href="assets/resume/Praveen-M-Resume.pdf"
+              onclick="openResume(event)"
+              class="mini-btn">
+              View Resume
+            </a>
 
-      </span>
+            <a href="#hire" class="mini-btn primary-mini">
+              Hire Me
+            </a>
+
+          </div>
+
+          </div>
+
+          <!-- CV + TALK BUTTONS -->
+        
+
+        </div>
+
+
+
+
+      </div>
+
+        <!-- RESUME MODAL -->
+        <div id="resumeModal" class="resume-modal">
+          <div class="resume-box">
+            <button class="resume-close" onclick="closeResume()">✕</button>
+            <iframe id="resumeFrame"></iframe>
+          </div>
+        </div>
+
+
     </div>
-
-    </div>
-
-    </div>
-
   </div>
 </header>
+
+
 
 
 <div class="context-strip">
@@ -499,6 +532,77 @@
 
 
 
+
+
+<!-- =========================
+     HIRE ME SECTION
+========================= -->
+<section id="hire" class="section reveal">
+
+  <h2 class="section-title">Hire Me</h2>
+
+  <div class="hire-grid">
+
+    <!-- LEFT SIDE CONTACT CARDS -->
+    <div class="hire-contact">
+
+      <div class="hire-card">
+        <h3>Email</h3>
+        <p>praveen.manisekaran2005@gmail.com</p>
+        <a href="mailto:praveen.manisekaran2005@gmail.com">
+          Send Email
+        </a>
+      </div>
+
+      <div class="hire-card">
+        <h3>Call</h3>
+        <p>+91 6380034334</p>
+        <a href="tel:+916380034334">
+          Call Now
+        </a>
+      </div>
+
+      <div class="hire-card">
+        <h3>WhatsApp</h3>
+        <p>+91 6380034334</p>
+        <a href="https://wa.me/916380034334?text=Hello%20I%20want%20to%20hire%20you" target="_blank">
+          Send Message
+        </a>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE FORM -->
+    <div class="hire-form">
+
+      <form action="https://formsubmit.co/praveen.manisekaran2005@gmail.com" method="POST">
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Portfolio Message">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- SCROLL TO TOP BUTTON -->
+<a href="javascript:void(0)" id="scrollTopBtn">↑</a>
+
+
+
+
 <footer class="smart-footer">
 
   <!-- LEFT -->
@@ -530,7 +634,6 @@
   </div>
 
 </footer>
-
 
 
 <!-- RESUME PREVIEW MODAL (LIKE CERTIFICATE PREVIEW) -->
