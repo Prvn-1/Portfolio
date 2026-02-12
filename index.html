@@ -573,33 +573,39 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </div>
 
     <!-- RIGHT SIDE FORM -->
-    <div class="hire-form">
+          <div class="hire-form">
 
-      <form id="contactForm"
-            action="https://formsubmit.co/praveen.manisekaran2005@gmail.com"
-            method="POST">
+            <form id="contactForm" action="thankyou.html" method="GET">
 
-        <!-- FormSubmit Settings -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="New Portfolio Message">
-        <input type="hidden" name="_next" value="https://Prvn-1.github.io/thankyou.html">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <input type="text" name="subject" placeholder="Subject" required>
+              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
-        <!-- User Inputs -->
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="text" name="subject" placeholder="Subject" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+              <button type="submit">Send Message</button>
 
-        <button type="submit">Send Message</button>
+            </form>
 
-      </form>
+          </div>
 
-    </div>
+          <script>
+            document.getElementById("contactForm").addEventListener("submit", function(e) {
+
+              const confirmSend = confirm(
+                "Are you sure you want to send this message?\n\nI will personally review your request and contact you."
+              );
+
+              if (!confirmSend) {
+                e.preventDefault();
+              }
+
+            });
+          </script>
+
 
   </div>
 
 </section>
-
 
 
 
