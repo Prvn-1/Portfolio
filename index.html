@@ -575,11 +575,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     <!-- RIGHT SIDE FORM -->
     <div class="hire-form">
 
-      <form action="https://formsubmit.co/praveen.manisekaran2005@gmail.com" method="POST">
+      <form id="contactForm"
+            action="https://formsubmit.co/praveen.manisekaran2005@gmail.com"
+            method="POST">
 
+        <!-- FormSubmit Settings -->
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_subject" value="New Portfolio Message">
+        <input type="hidden" name="_next" value="https://Prvn-1.github.io/thankyou.html">
 
+        <!-- User Inputs -->
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <input type="text" name="subject" placeholder="Subject" required>
@@ -594,6 +599,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   </div>
 
 </section>
+
 
 
 

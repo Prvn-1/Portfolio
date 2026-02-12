@@ -161,8 +161,8 @@ body {
   flex-direction: column;
   min-width: 200px;
   box-shadow:
-    0 0 25px rgba(212,175,55,0.35),
-    0 0 45px rgba(212,175,55,0.2);
+    0 0 25px rgba(55, 196, 212, 0.35),
+    0 0 45px rgba(55, 157, 212, 0.2);
 }
 
 .mini-menu a {
@@ -351,9 +351,7 @@ body {
   transform: translateY(-8px);
   box-shadow: 0 0 25px rgba(0, 224, 255, 0.2);
 }
-.box2{
-  background-color: #27303c5d;
-}
+
 .box {
   background: linear-gradient(145deg, #14253d, #0c1624);
   padding: 25px;

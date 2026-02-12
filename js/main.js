@@ -22,6 +22,7 @@ window.addEventListener("scroll", () => {
 const roles = [
   "Python Developer",
   "Full Stack Developer",
+  "Frontend Developer",
   "Web Developer"
 ];
 
@@ -400,4 +401,26 @@ scrollBtn.addEventListener("click", () => {
     top: homeSection.offsetTop - 80,
     behavior: "smooth"
   });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const form = document.getElementById("contactForm");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+
+      const confirmSend = confirm(
+        "Are you sure you want to send this message?\n\nI will personally review and respond."
+      );
+
+      if (!confirmSend) {
+        e.preventDefault();
+      }
+
+    });
+  }
+
 });

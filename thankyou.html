@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" id="thankHtml">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Submitted | Praveen</title>
+
+  <meta name="description" content="Form submission confirmation page">
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    let seconds = 10;   // change to 20 if you want 20 sec
+    const redirectText = document.querySelector(".redirectText");
+
+    const timer = setInterval(function () {
+      seconds--;
+
+      if (redirectText) {
+        redirectText.textContent =
+          "You will be redirected to the homepage in " + seconds + " seconds.";
+      }
+
+      if (seconds <= 0) {
+        clearInterval(timer);
+        window.location.href = "index.html";
+      }
+
+    }, 1000);
+
+  });
+</script>
+
+
+
+  <style>
+
+    /* ===== RESET ===== */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body#thankBody {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(180deg, #0f0f0f 0%, #111827 100%);
+      color: #f5f5f5;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+
+    /* ===== MAIN CONTAINER ===== */
+    main#thankMain {
+      width: 100%;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    section#thankSection {
+      width: 100%;
+      max-width: 680px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 18px;
+      padding: 60px 50px;
+      backdrop-filter: blur(12px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    /* ===== ICON ===== */
+    div#iconWrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    span.successIcon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(34, 197, 94, 0.1);
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      font-size: 32px;
+      color: #22c55e;
+    }
+
+    /* ===== TEXT CONTENT ===== */
+    header#thankHeader {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    h1#thankTitle {
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+
+    p#thankSubtitle {
+      font-size: 15px;
+      color: #9ca3af;
+    }
+
+    article#thankMessageBlock {
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    p.messageLine {
+      font-size: 15px;
+      line-height: 1.8;
+      margin-bottom: 12px;
+      color: #d1d5db;
+    }
+
+    /* ===== DIVIDER ===== */
+    hr#thankDivider {
+      margin: 30px 0;
+      border: none;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    /* ===== FOOTER INFO ===== */
+    footer#thankFooter {
+      text-align: center;
+    }
+
+    p.redirectText {
+      font-size: 13px;
+      color: #6b7280;
+      margin-bottom: 20px;
+    }
+
+    button#backHomeBtn {
+      padding: 10px 28px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: transparent;
+      color: #f5f5f5;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button#backHomeBtn:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+
+    /* ===== ANIMATION ===== */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 600px) {
+      section#thankSection {
+        padding: 40px 25px;
+      }
+
+      h1#thankTitle {
+        font-size: 22px;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body id="thankBody">
+
+  <main id="thankMain" role="main">
+
+    <section id="thankSection" aria-labelledby="thankTitle">
+
+      <div id="iconWrapper">
+        <span class="successIcon">✓</span>
+      </div>
+
+      <header id="thankHeader">
+        <h1 id="thankTitle">Message Received.</h1>
+        <p id="thankSubtitle">
+          Thank you for reaching out.
+        </p>
+      </header>
+
+      <article id="thankMessageBlock">
+        <p class="messageLine">
+          I will review your message and respond shortly.
+        </p>
+        <p class="messageLine">
+          Looking forward to connecting with you.
+        </p>
+      </article>
+
+      <hr id="thankDivider">
+
+      <footer id="thankFooter">
+        <p class="redirectText">
+          Return to portfolio below.
+        </p>
+        <button id="backHomeBtn" onclick="window.location.href='index.html'">
+          Back to Portfolio
+        </button>
+      </footer>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>
