@@ -575,16 +575,24 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     <!-- RIGHT SIDE FORM -->
           <div class="hire-form">
 
-            <form id="contactForm" action="thankyou.html" method="GET">
+        <form action="https://formsubmit.co/praveen.manisekaran2005@gmail.com" method="POST">
 
-              <input type="text" name="name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
-              <input type="text" name="subject" placeholder="Subject" required>
-              <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <!-- Required for FormSubmit -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://prvn-1.github.io/Portfolio/thankyou.html
+">
 
-              <button type="submit">Send Message</button>
+          <!-- Your Fields -->
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
-            </form>
+          <button type="submit">Send Message</button>
+
+        </form>
+
+
 
           </div>
 
