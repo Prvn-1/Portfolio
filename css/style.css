@@ -2038,3 +2038,34 @@ html {
   font-size: 28px;
   cursor: pointer;
 }
+
+/* ===============================
+   Highlight Skill Card (Pandas)
+================================ */
+
+.skill-highlight {
+  position: relative;
+  background: linear-gradient(145deg, #0f1b2b, #0a1422);
+  border-radius: 25px;
+  padding: 60px 20px;
+  transition: all 0.4s ease;
+}
+
+.skill-highlight i {
+  font-size: 90px;
+  margin-bottom: 20px;
+}
+
+.skill-highlight span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Glow Effect */
+.skill-highlight:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 
+      0 0 20px rgba(0, 255, 255, 0.3),
+      0 0 40px rgba(0, 255, 255, 0.2),
+      0 0 60px rgba(0, 255, 255, 0.1);
+}
