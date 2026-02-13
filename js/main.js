@@ -174,24 +174,7 @@ certBtn.addEventListener("click", () => {
 
 
 
-function openResume(e) {
-  e.preventDefault();
-  const modal = document.getElementById("resumeModal");
-  const frame = document.getElementById("resumeFrame");
 
-  frame.src = "assets/resume/Praveen-M-Resume.pdf";
-  modal.style.display = "flex";
-  document.body.style.overflow = "hidden";
-}
-
-function closeResume() {
-  const modal = document.getElementById("resumeModal");
-  const frame = document.getElementById("resumeFrame");
-
-  modal.style.display = "none";
-  frame.src = "";
-  document.body.style.overflow = "auto";
-}
 
 
 
