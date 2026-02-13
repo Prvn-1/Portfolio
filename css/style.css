@@ -2069,3 +2069,14 @@ html {
       0 0 40px rgba(0, 255, 255, 0.2),
       0 0 60px rgba(0, 255, 255, 0.1);
 }
+
+#home,
+#skills,
+#projects,
+#internships,
+#certifications,
+#tools,
+#about,
+#hire {
+  scroll-margin-top: 140px;
+}

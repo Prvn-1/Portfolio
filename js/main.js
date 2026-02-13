@@ -385,3 +385,81 @@ scrollBtn.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+
+
+
+
+let selectedVoice = null;
+
+/* Load voices */
+function loadVoices() {
+  const voices = speechSynthesis.getVoices();
+
+  // Force Google US English (male-like tone)
+  selectedVoice = voices.find(v =>
+    v.name === "Google US English"
+  ) || voices.find(v =>
+    v.name.includes("David")
+  ) || voices[0];
+}
+
+speechSynthesis.onvoiceschanged = loadVoices;
+loadVoices();
+
+/* Speak Function */
+function speakMale(message) {
+
+  speechSynthesis.cancel();
+
+  const speech = new SpeechSynthesisUtterance(message);
+
+  if (selectedVoice) speech.voice = selectedVoice;
+
+  // Slight deeper tone tuning
+  speech.rate = 0.95;   // slightly slower
+  speech.pitch = 0.9;   // lower pitch = more masculine
+  speech.volume = 1;
+
+  speechSynthesis.speak(speech);
+}
+
+/* Main handler */
+function handleVoice(event, message) {
+
+  const link = event.currentTarget;
+  const url = link.getAttribute("href");
+
+  speakMale(message);
+
+  if (!link.hasAttribute("download")) {
+    event.preventDefault();
+
+    setTimeout(() => {
+      if (url.startsWith("#")) {
+        window.location.hash = url;
+      } else {
+        window.open(url, "_blank");
+      }
+    }, 650);
+  }
+}
+
+/* Navbar handler */
+function handleNavVoice(event, message) {
+
+  event.preventDefault();
+
+  const link = event.currentTarget;
+  const targetId = link.getAttribute("href");
+
+  speakMale(message);
+
+  setTimeout(() => {
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  }, 550);
+}

@@ -28,18 +28,51 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
   </div>
 
   <!-- DESKTOP NAV -->
-  <nav class="nav-links-desktop">
-    <a href="#home">Home</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#internships">Experience</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#tools">Tools</a>
-    <a href="#about">About</a>
-    <a href="#hire" class="nav-link hire-btn" >Let's Talk</a>
+<nav class="nav-links-desktop">
 
+  <a href="#home"
+     onclick="handleNavVoice(event, 'You Are in Home section')">
+     Home
+  </a>
 
-  </nav>
+  <a href="#skills"
+     onclick="handleNavVoice(event, 'this is my Skills section')">
+     Skills
+  </a>
+
+  <a href="#projects"
+     onclick="handleNavVoice(event, 'this is my Projects section')">
+     Projects
+  </a>
+
+  <a href="#internships"
+     onclick="handleNavVoice(event, 'this is my Experience section')">
+     Experience
+  </a>
+
+  <a href="#certifications"
+     onclick="handleNavVoice(event, 'this is my Certifications section')">
+     Certifications
+  </a>
+
+  <a href="#tools"
+     onclick="handleNavVoice(event, 'this is my Tools section')">
+     Tools
+  </a>
+
+  <a href="#about"
+     onclick="handleNavVoice(event, 'this is my About section')">
+     About
+  </a>
+
+  <a href="#hire"
+     class="nav-link hire-btn"
+     onclick="handleNavVoice(event, ' thank u for hiring me')">
+     Let's Talk
+  </a>
+
+</nav>
+
 
   <!-- MOBILE TOGGLE -->
   <button id="menuToggle" class="menu-btn">☰</button>
@@ -102,54 +135,66 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
           
 
-                <!-- HERO ACTION AREA -->
-        <div class=".link-row hero-actions">
+<!-- HERO ACTION AREA -->
+<div class="link-row hero-actions">
 
-          <!-- SOCIAL ICONS -->
-          <div class=".link-row social-icons">
+  <!-- SOCIAL ICONS -->
+  <div class="link-row social-icons">
 
-            <a href="https://github.com/Prvn-1" target="_blank" class="social-btn">
-              <i class="devicon-github-original reveal reveal-scale delay-1"></i>
-            </a>
+    <!-- GitHub -->
+    <a href="https://github.com/Prvn-1"
+       class="social-btn"
+       onclick="handleVoice(event, 'Opening GitHub profile', 'https://github.com/Prvn-1')">
+      <i class="devicon-github-original"></i>
+    </a>
 
-            <a href="https://www.linkedin.com/in/pravn1/" target="_blank" class="social-btn">
-              <i class="devicon-linkedin-plain "></i>
-            </a>
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/pravn1/"
+       class="social-btn"
+       onclick="handleVoice(event, 'Opening LinkedIn profile', 'https://www.linkedin.com/in/pravn1/')">
+      <i class="devicon-linkedin-plain"></i>
+    </a>
 
-            <a href="https://wa.me/916380034334" target="_blank" class="social-btn ">
-              <i class="fa-brands fa-whatsapp"></i>
-            </a>
+    <!-- WhatsApp -->
+    <a href="https://wa.me/916380034334"
+       class="social-btn"
+       onclick="handleVoice(event, 'Opening WhatsApp chat', 'https://wa.me/916380034334')">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
-            <a href="https://www.instagram.com/praveen_d_u_d_e/" target="_blank" class="social-btn">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/praveen_d_u_d_e/"
+       class="social-btn"
+       onclick="handleVoice(event, 'Opening Instagram profile', 'https://www.instagram.com/praveen_d_u_d_e/')">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <!-- Download CV -->
+    <a href="assets/resume/Praveen-M-Resume.pdf"
+      class="mini-btn"
+      download
+      onclick="handleVoice(event, 'Downloading resume')">
+      <i class="fa-solid fa-download"></i>
+      Download CV
+    </a>
 
-            <div class="hero-buttons">
+    <!-- View Resume -->
+    <a href="assets/resume/Praveen-M-Resume.pdf"
+       class="mini-btn"
+       onclick="handleVoice(event, 'Viewing resume', 'assets/resume/Praveen-M-Resume.pdf')">
+      View Resume
+    </a>
 
-            <a href="assets/resume/Praveen-M-Resume.pdf"
-              download
-              class="mini-btn">
-              <i class="fa-solid fa-download"></i>
-              Download CV
-            </a>
-            <a href="assets/resume/Praveen-M-Resume.pdf" 
-              class="mini-btn" 
-              target="_blank">
-              View Resume
-            </a>
+    <!-- Hire Me -->
+    <a href="#hire"
+       class="mini-btn primary-mini"
+       onclick="handleVoice(event, 'Welcome to hire me section', '#hire')">
+      Hire Me
+    </a>
 
-            <a href="#hire" class="mini-btn primary-mini">
-              Hire Me
-            </a>
+  </div>
 
-          </div>
+</div>
 
-          </div>
-
-          <!-- CV + TALK BUTTONS -->
-        
-
-        </div>
 
 
 
