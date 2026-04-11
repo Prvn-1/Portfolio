@@ -418,7 +418,7 @@ function speakMale(message) {
   // Slight deeper tone tuning
   speech.rate = 0.95;   // slightly slower
   speech.pitch = 0.9;   // lower pitch = more masculine
-  speech.volume = 1;
+  speech.volume = 0.7;
 
   speechSynthesis.speak(speech);
 }
